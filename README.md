@@ -1,5 +1,8 @@
-# GitHub User Repositories Viewer
+#check the website here
+https://sunny-hamster-8d6ecf.netlify.app/
 
+
+# GitHub User Repositories Viewer
 This web application allows users to search for a GitHub user and view their repositories with pagination. It displays the user's profile information, including their profile picture, name, and a link to their GitHub profile. The user can customize the number of repositories displayed per page and navigate through paginated results.
 
 ## Features
