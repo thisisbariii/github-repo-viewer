@@ -1,0 +1,106 @@
+body {
+  background: hsl(192, 94%, 32%);
+}
+
+.profile {
+  margin: 20px 0;
+}
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-userpic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #eaeef3;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.flex-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.flex-box {
+  width: 200px;
+  height: 200px;
+  background: hsl(192, 94%, 22%); 
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  border-radius: 20px;
+  margin: 20px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+}
+.flex-box.dark-text {
+  color: black;
+}
+
+.flex-box.light-text {
+  color: white;
+}
+.pagination {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px; /* Adjust as needed */
+  background-color:hsl(192, 80%, 32%); /* Adjust background color if needed */
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #150b99;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px; /* Half of the height */
+  margin-left: -15px; /* Half of the width */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row profile">
+        <div class="col-md-3">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img id="profileImage" class="img-fluid" alt="Profile Picture" src="image.jpg">
+                </div>
+                <div class="profile-usertitle">
+                    <div id="profileName" class="profile-usertitle-name">
+                       john doe
+                    </div>
+                </div>
+                <div class="profile-userbuttons">
+                    <a id="githubLink" href="#" class="github-link btn btn-danger btn-sm" target="_blank">My Github Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- Number Input -->
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="repoCountInput">select repo</label>
+                                <input type="number" class="form-control" id="repoCountInput" min="1" max="100" placeholder="Repo per page">
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <!-- Space between Input and Search Bar -->
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="col-md-7">
+                            <!-- Search Bar -->
+                            <form id="githubForm" class="d-flex">
+                                <input id="githubIdInput" class="form-control me-2" type="search" placeholder="Enter Your Github ID" aria-label="Search">
+                                <button class="btn btn-danger btn-sm" type="button" onclick="searchGithubUser()">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="loader" class="loader"></div>
+
+                <div class="flex-container" id="reposContainer">
+                    <!-- Repositories will be dynamically added here -->
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <ul class="pagination" id="pagination">
+                            <!-- Pagination buttons will be dynamically added here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
